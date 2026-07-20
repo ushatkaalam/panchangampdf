@@ -29,5 +29,5 @@ function showtestdoc()
     const viewer =
         document.getElementById("pdfViewer");
 
-    viewer.src = "test_doc.pdf";
+    viewer.src = "a_doc.pdf";
 }
