@@ -7,15 +7,15 @@ document.addEventListener("DOMContentLoaded", function ()
     //
     // Locate the button
     //
-    const btnUserManual =
-        document.getElementById("btnUserManual");
+    const btntestdoc =
+        document.getElementById("btntestdoc");
 
     //
     // Attach click event
     //
-    btnUserManual.addEventListener(
+    btntestdoc.addEventListener(
         "click",
-        showUserManual
+        showtestdoc
     );
 
 });
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function ()
 //
 // Display User Manual
 //
-function showUserManual()
+function showtestdoc()
 {
     const viewer =
         document.getElementById("pdfViewer");
