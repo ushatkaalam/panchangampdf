@@ -1,101 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Panchangam - On the go</title>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Panchangam Documentation</title>
+
+<script src="docs.js" defer></script>
 
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    padding: 70px 20px 20px 20px;
-  }
 
-  h2 {
-    font-size: 1.17em;
-    font-weight: bold;
-  }
-
-  .box {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-top: 10px;
-  }
-
-  #langSwitch button {
-  background: #0F766E;
-  color: #FFFFFF;
-  border: 1px solid #0F766E;
-  padding: 6px 10px;
-  margin: 2px;
-  border-radius: 6px;
-  cursor: pointer;
+body
+{
+    font-family:Arial,Helvetica,sans-serif;
+    margin:20px;
 }
 
-#langSwitch button:hover {
-  background: #115E59;
+h1
+{
+    text-align:center;
 }
-#langSwitch {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
 
-  background: white;
-  padding: 8px 10px;
+button
+{
+    width:180px;
+    padding:12px;
+    font-size:16px;
+    margin-bottom:20px;
+}
 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+#viewerContainer
+{
+    margin-top:20px;
 }
-#langSwitch button.active {
-  background: #FFFFFF;
-  color: #0F766E;
-  border: 2px solid #FACC15;
-  font-weight: bold;
-  transform: scale(1.05);
-  box-shadow: 0 0 6px rgba(250, 204, 21, 0.35);
+
+iframe
+{
+    width:100%;
+    height:800px;
+    border:1px solid gray;
 }
+
 </style>
+
 </head>
 
 <body>
 
-<div id="langSwitch">
-<button data-lang="en">English</button>
-<button data-lang="sa">संस्कृतम्</button>
-<button data-lang="ta">தமிழ்</button>
-<button data-lang="te">తెలుగు</button>
-<button data-lang="ka">ಕನ್ನಡ</button>
-</div> 
+<h1>Panchangam Documentation</h1>
 
-<div id="appTitle"></div>
-<div id="nowTime"></div>
+<button id="btnUserManual">
 
-<div id="sowramanamExtras" class="box" style="background:#f5faff;"></div>
-<div id="thithiExtras" class="box" style="background:#fafafa;"></div>
-<div id="thithiBlock" class="box"></div>
-<div id="nakshatramBlock" class="box"></div>
-<div id="yogamBlock" class="box"></div>
-<div id="karanamBlock" class="box"></div>
-<div id="pakshamDegreesBlock" class="box">
-<div id="pakshamTitle"></div>
-  <canvas id="pakshamDegreesPie" width="500" height="480"></canvas>
+User Manual
+
+</button>
+
+<div id="viewerContainer">
+
+<iframe
+        id="pdfViewer"
+        title="PDF Viewer">
+</iframe>
+
 </div>
 
-<hr style="border-top: 4px solid black;">
-
-<div id="tableHeaderBlock"></div>
-<div id="thithiTableBox"></div>
-<br>
-
-<div id="nakshatramTableBox"></div>
-<br>
-
-<div id="yogamTableBox"></div>
-<br>
-
-<div id="karanamTableBox"></div>
-<!-- Load JS ONCE -->
-<script src="script.js?v=6"></script>
-
 </body>
+
 </html>
