@@ -29,5 +29,5 @@ function showUserManual()
     const viewer =
         document.getElementById("pdfViewer");
 
-    viewer.src = "docs/User_Manual.pdf";
+    viewer.src = "test_doc.pdf";
 }
