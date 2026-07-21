@@ -23,11 +23,8 @@ document.addEventListener("DOMContentLoaded", function ()
 
 //
 // Display User Manual
-//
+
 function showtestdoc()
 {
-    const viewer =
-        document.getElementById("pdfViewer");
-
-    viewer.src = "a_doc.pdf";
+    window.open("a_doc.pdf", "_blank");
 }
