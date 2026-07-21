@@ -8,7 +8,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>Panchangam Documentation</title>
+<title>Categories of documentation</title>
 
 <script src="docs.js" defer></script>
 
@@ -33,11 +33,35 @@ button
     margin-bottom:20px;
 }
 
-#viewerContainer
+
+#categoryButtons
 {
-    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:25px;
 }
 
+.category
+{
+    min-width:160px;
+}
+
+.active
+{
+    background:#1976d2;
+    color:white;
+    font-weight:bold;
+}
+
+#pdfButtonContainer
+#pdfButtonContainer
+{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:20px;
+}
 
 
 </style>
@@ -48,12 +72,35 @@ button
 
 <h1>Documentation</h1>
 
-<button id="btntestdoc">
+<div id="categoryButtons">
 
-Test doc
+    <button
+        id="btnCategoryA"
+        class="category active">
+        Category A
+    </button>
 
-</button>
+    <button
+        id="btnCategoryB"
+        class="category">
+        Category B
+    </button>
+<button
+        id="btnCategoryC"
+        class="category">
+        Category C
+    </button>
+<button
+        id="btnCategoryD"
+        class="category">
+        Category D
+    </button>
 
+</div>
+
+<div id="pdfButtonContainer">
+
+</div>
 
 
 </body>
