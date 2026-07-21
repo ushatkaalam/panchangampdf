@@ -3,12 +3,13 @@
 //
 
 
-const CATEGORY_A_FOLDER = "pdf/categoryAFolder/";
-const CATEGORY_B_FOLDER = "pdf/categoryBFolder/";
-const CATEGORY_C_FOLDER = "pdf/categoryCFolder/";
-const CATEGORY_D_FOLDER = "pdf/categoryDFolder/";
 
-CATEGORY_A_FOLDER + "cat_a_pdf_1.pdf"
+const CATEGORY_A_FOLDER = "pdf/categoryA/";
+const CATEGORY_B_FOLDER = "pdf/categoryB/";
+const CATEGORY_C_FOLDER = "pdf/categoryC/";
+const CATEGORY_D_FOLDER = "pdf/categoryD/";
+
+
 
 const documents =
 {
@@ -270,6 +271,7 @@ const documents =
         
     ]
 };
+
 
 
 
