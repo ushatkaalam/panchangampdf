@@ -531,15 +531,34 @@ function showCategory(category)
 
             button.textContent =
                 doc.label;
-
+			button.dataset.id = doc.id;
+			
             button.addEventListener(
-                "click",
-                function()
-                {
-                    window.open(
-                        doc.file,
-                        "_blank");
-                });
+			    "click",
+			    function()
+			    {
+			        //
+			        // Remove highlight from every PDF button
+			        //
+			        document
+			            .querySelectorAll("#pdfButtonContainer button")
+			            .forEach(function(btn)
+			            {
+			                btn.classList.remove("pdfSelected");
+			            });
+			
+			        //
+			        // Highlight this button
+			        //
+			        button.classList.add("pdfSelected");
+			
+			        //
+			        // Open the PDF
+			        //
+			        window.open(
+			            doc.file,
+			            "_blank");
+			    });
 
             container.appendChild(
                 button);
