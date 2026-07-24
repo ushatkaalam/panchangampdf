@@ -15,15 +15,16 @@ const documents =
     A:
     [
         { id     : "A001",
+          label  : "shri_rudram_chamakam", 
+          description : "",
+          keywords    : [],
+          file   : CATEGORY_A_FOLDER + "shri_rudram_chamakam.pdf"},
+		{ id     : "A002",
           label  : "Udaka_shanthi", 
           description : "",
           keywords    : [],
 	      file   : CATEGORY_A_FOLDER + "udaka_shanthi.pdf"},
-        { id     : "A002",
-          label  : "Cat A PDF 2", 
-          description : "",
-          keywords    : [],
-          file   : CATEGORY_A_FOLDER + "cat_a_pdf_2.pdf"},
+        
         { id     : "A003",
           label  : "Cat A PDF 3", 
           description : "",
