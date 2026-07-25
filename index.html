@@ -66,7 +66,41 @@ button
     background:#90caf9;
     font-weight:bold;
 }
+#categoryHeader
+{
+    background:#f2f2f2;
+    border:1px solid #c0c0c0;
+    padding:12px;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+}
 
+      .categoryA
+{
+    background:#E3F2FD;
+    color:#0D47A1;
+}
+
+.categoryB
+{
+    background:#E8F5E9;
+    color:#1B5E20;
+}
+
+.categoryC
+{
+    background:#FFF8E1;
+    color:#E65100;
+}
+
+.categoryD
+{
+    background:#F3E5F5;
+    color:#4A148C;
+}
 </style>
 
 </head>
@@ -75,29 +109,35 @@ button
 
 <h1>Samgrahaalaya</h1>
 
+<div id="categoryHeader">
+    Categories listed below
+</div>
+      
 <div id="categoryButtons">
 
     <button
-        id="btnCategoryA"
-        class="category active">
-        Vedam
-    </button>
+    id="btnCategoryA"
+    class="category categoryA active">
+    Vedam
+</button>
 
-    <button
-        id="btnCategoryB"
-        class="category">
-        Ashtottharam
-    </button>
 <button
-        id="btnCategoryC"
-        class="category">
-        Shlokam
-    </button>
+    id="btnCategoryB"
+    class="category categoryB">
+    Ashtottharam
+</button>
+
 <button
-        id="btnCategoryD"
-        class="category">
-        Paaraayanam
-    </button>
+    id="btnCategoryC"
+    class="category categoryC">
+    Shlokam
+</button>
+
+<button
+    id="btnCategoryD"
+    class="category categoryD">
+    Paaraayanam
+</button>
 
 </div>
 
