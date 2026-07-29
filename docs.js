@@ -233,7 +233,7 @@ const documents =
           label  : "Kaalabhairava ashtakam", 
           description : "",
           keywords    : [],
-          file   : CATEGORY_C_FOLDER + "Kaalabhairava ashtakam"},
+          file   : CATEGORY_C_FOLDER + "Kaalabhairava ashtakam.pdf"},
         { id     : "C003",
           label  : "Cat C PDF 3", 
           description : "",
