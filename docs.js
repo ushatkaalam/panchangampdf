@@ -329,10 +329,10 @@ const documents =
     D:
     [
         { id     : "D001",
-          label  : "Cat D PDF 1", 
+          label  : "Durga_saptashathi", 
           description : "",
           keywords    : [],
-          file   : CATEGORY_D_FOLDER + "cat_d_pdf_1.pdf"},
+          file   : CATEGORY_D_FOLDER + "Durga_saptashathi.pdf"},
         { id     : "D002",
           label  : "Cat D PDF 2", 
           description : "",
